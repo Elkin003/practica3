@@ -95,21 +95,15 @@ public class CasasArchivo {
         String resultado = "";
         boolean homonima = false;
         if (casas == null || casas.length == 0) {
-            return "No hay casas registradas o hubo un error al listarlas.";
+            resultado = "No hay casas registradas o hubo un error al listarlas.";
+            return resultado;
         }
         for (int i = 0; i < casas.length; i++) {
-            if (casas[i] == null) {
-                continue;
-            }
             for (int j = i + 1; j < casas.length; j++) {
-                if (casas[j] == null) {
-                    continue;
-                }
-                if (casas[i][1] != null && casas[j][1] != null && casas[i][1].equals(casas[j][1])
-                        && casas[i][2] != null && casas[j][2] != null && casas[i][2].equals(casas[j][2])
-                        && casas[i][3] != null && casas[j][3] != null && casas[i][3].equals(casas[j][3])
-                        && casas[i][4] != null && casas[j][4] != null && casas[i][4].equals(casas[j][4])) {
-
+                if (casas[i][1].equals(casas[j][1])//largo
+                        && casas[i][2].equals(casas[j][2])//ancho
+                        && casas[i][3].equals(casas[j][3])//altura
+                        && casas[i][4].equals(casas[j][4])) {//pisos
                     resultado = resultado + "Casa " + casas[i][0] + " y Casa " + casas[j][0] + " son homónimas.\n";
                     homonima = true;
                 }

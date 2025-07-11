@@ -29,4 +29,5 @@ nbproject/private/private.properties
 nbproject/project.properties
 nbproject/project.xml
 nbproject/genfiles.properties
-/build/
+build/classes/.netbeans_automatic_build
+build/classes/.netbeans_update_resources

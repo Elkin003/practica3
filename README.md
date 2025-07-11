@@ -1,2 +1,2 @@
-# laberinto
+# practica3
 

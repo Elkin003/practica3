@@ -28,3 +28,9 @@ build
 nbproject
 build.xml
 manifest.mf
+nbproject/private/private.xml
+nbproject/private/private.xml
+/nbproject
+/nbproject
+*.xml
+/nbproject/private

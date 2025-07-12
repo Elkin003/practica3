@@ -185,7 +185,7 @@ public class CasasView extends javax.swing.JDialog {
 
     private void btnVerificarHomonimasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarHomonimasActionPerformed
         try {
-            verificarHomonimas();
+            btnVerificarHomonimas();
         } catch (Exception e) {
         }
     }//GEN-LAST:event_btnVerificarHomonimasActionPerformed

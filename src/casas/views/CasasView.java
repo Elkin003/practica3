@@ -49,7 +49,7 @@ public class CasasView extends javax.swing.JDialog {
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Ingrese datos numéricos", "Error", JOptionPane.ERROR_MESSAGE);
-            limpiarCampos();+
+            limpiarCampos();
         }
     }
 

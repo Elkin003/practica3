@@ -51,7 +51,7 @@ public class CasasView extends javax.swing.JDialog {
         }
     }
 
-    private void verificarHomonimas() throws IOException {
+    private void btnVerificarHomonimas() throws IOException {
         String[][] casas = ca.listarCasas("Casas.dat");
         String resultado = ca.verificarHomonimas(casas);
         JOptionPane.showMessageDialog(null, resultado, "Casas Homónimas", JOptionPane.INFORMATION_MESSAGE);

@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
-package casas.views;
+package views;
 
-import casas.controller.CasasArchivo;
-import casas.modelos.ModelotablaCasas;
+import controller.CasasArchivo;
+import modelos.ModelotablaCasas;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 
@@ -107,7 +107,6 @@ public class CasasView extends javax.swing.JDialog {
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(400, 500));
         getContentPane().setLayout(null);
         getContentPane().add(txtNroPisos);
         txtNroPisos.setBounds(300, 70, 75, 26);

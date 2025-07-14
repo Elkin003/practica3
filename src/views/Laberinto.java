@@ -12,7 +12,9 @@ import modelos.ModeloTablaLaberinto;
  * @author franz
  */
 public class Laberinto extends javax.swing.JDialog {
+
     private Laberintocontroller cont = new Laberintocontroller();
+
     /**
      * Creates new form Laberinto
      *
@@ -47,6 +49,9 @@ public class Laberinto extends javax.swing.JDialog {
         ModeloTablaLaberinto lab = new ModeloTablaLaberinto();
         lab.setLaberinto(cont.getLaberinto());
         Laberinto.setModel(lab);
+        for (int i = 0; i < Laberinto.getColumnCount(); i++) {
+            Laberinto.getColumnModel().getColumn(i).setPreferredWidth(30);
+        }
     }
 
     /**
@@ -147,12 +152,12 @@ public class Laberinto extends javax.swing.JDialog {
 
     private void cbxfilasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxfilasActionPerformed
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_cbxfilasActionPerformed
 
     private void cdxcolumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cdxcolumActionPerformed
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_cdxcolumActionPerformed
 
     /**

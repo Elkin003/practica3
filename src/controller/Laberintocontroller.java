@@ -38,7 +38,7 @@ public class Laberintocontroller {
             int i = ran.nextInt(filas);
             int j = ran.nextInt(columna);
             if (laberinto[i][j].equals(" ")) {
-                laberinto[i][j] = "|";
+                laberinto[i][j] = "■";
                 contador++;
             }
         }

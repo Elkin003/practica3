@@ -4,7 +4,6 @@
  */
 package views;
 
-
 import controller.Matrizcontrolador;
 import javax.swing.JOptionPane;
 import modelos.ModeloTablaMatriz;
@@ -14,6 +13,7 @@ import modelos.ModeloTablaMatriz;
  * @author franz
  */
 public class Matriz extends javax.swing.JDialog {
+
     private Matrizcontrolador ma = new Matrizcontrolador();
 
     /**
@@ -28,7 +28,7 @@ public class Matriz extends javax.swing.JDialog {
         Filascolumna();
         mdltabla.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
     }
-    
+
     public void general() {
         int filas = Integer.parseInt((String) cbxfilas.getSelectedItem());
         int columna = Integer.parseInt((String) cdxcolum.getSelectedItem());
@@ -48,8 +48,12 @@ public class Matriz extends javax.swing.JDialog {
     }
 
     public void Retirarprimo() {
-        ma.eliminarprimo();
-        subirtablas();
+        if (ma.getGeneral() == null) {
+            JOptionPane.showMessageDialog(null, "Genere la matriz primero", "Error", JOptionPane.ERROR_MESSAGE);
+        } else {
+            ma.eliminarprimo();
+            subirtablas();
+        }
     }
 
     public void Filascolumna() {
@@ -70,9 +74,6 @@ public class Matriz extends javax.swing.JDialog {
         nuevoModelo.setMatriz(ma.getGeneral());
         mdltabla.setModel(nuevoModelo);
     }
-    
-
-
 
     /**
      * This method is called from within the constructor to initialize the form.
